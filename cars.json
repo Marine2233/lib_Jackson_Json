@@ -1,0 +1,31 @@
+{
+  "carList" : [ {
+    "model" : "dc",
+    "brand" : "Brand",
+    "year" : "19",
+    "price" : 850000.0,
+    "engineVol" : "120",
+    "electric" : false
+  }, {
+    "model" : "kj",
+    "brand" : "Brand4",
+    "year" : "22",
+    "price" : 1000000.0,
+    "engineVol" : "120",
+    "electric" : true
+  }, {
+    "model" : "qq",
+    "brand" : "Brand7",
+    "year" : "26",
+    "price" : 1.2E7,
+    "engineVol" : "120",
+    "electric" : false
+  }, {
+    "model" : "dc",
+    "brand" : "Brand18",
+    "year" : "26",
+    "price" : 5.0E7,
+    "engineVol" : "190",
+    "electric" : false
+  } ]
+}

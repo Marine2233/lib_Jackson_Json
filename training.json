@@ -1,0 +1,9 @@
+{
+  "name" : "FG",
+  "duration" : "4 час",
+  "trainer" : {
+    "name" : "AAR",
+    "specialization" : "FG",
+    "experience" : "MS"
+  }
+}
