@@ -1,4 +1,4 @@
-package json.TR.om.otherTasks;
+package json.libJackson.om.otherTasks;
 
 import lombok.*;
 

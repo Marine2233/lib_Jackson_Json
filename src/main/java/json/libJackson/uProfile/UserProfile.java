@@ -1,6 +1,7 @@
-package json.TR.uProfile;
+package json.libJackson.uProfile;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,6 +15,7 @@ import java.io.IOException;
 @Data
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
+@JsonIgnoreProperties(ignoreUnknown = true) //сокрытие неизвестных полей
 public class UserProfile {
     public static void main(String[] args) {
         UserProfile profile = new UserProfile("full Name","Email","pass",

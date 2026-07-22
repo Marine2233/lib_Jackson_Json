@@ -1,4 +1,4 @@
-package json.TR.Employee;
+package json.libJackson.Employee;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

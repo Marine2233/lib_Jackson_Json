@@ -1,0 +1,22 @@
+{
+  "Ë-4" : {
+    "name" : "E-2",
+    "position" : "DEW-J",
+    "salary" : 165000.0
+  },
+  "Ë-2" : {
+    "name" : "E4",
+    "position" : "TL",
+    "salary" : 660000.0
+  },
+  "E-1" : {
+    "name" : "E1",
+    "position" : "S-ADMIN",
+    "salary" : 88000.0
+  },
+  "Ë-1" : {
+    "name" : "E-3",
+    "position" : "DEW-M",
+    "salary" : 253000.00000000003
+  }
+}

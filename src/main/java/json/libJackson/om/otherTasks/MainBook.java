@@ -1,4 +1,4 @@
-package json.TR.om.otherTasks;
+package json.libJackson.om.otherTasks;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

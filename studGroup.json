@@ -1,0 +1,14 @@
+{
+  "creationDate" : "12.05.2026",
+  "students" : [ {
+    "birthDate" : "01.02.1996",
+    "phone" : "123",
+    "full_name" : "student 1 "
+  }, {
+    "birthDate" : "08.08.1996",
+    "courses" : [ "Java", "SF" ],
+    "phone" : "123",
+    "full_name" : "student 2 "
+  } ],
+  "group_name" : "Group"
+}

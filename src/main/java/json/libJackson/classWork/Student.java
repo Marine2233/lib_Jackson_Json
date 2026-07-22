@@ -1,4 +1,4 @@
-package json.TR.classWork;
+package json.libJackson.classWork;
 
 public class Student {
     private String name;

@@ -1,4 +1,4 @@
-package json.TR.JsonString;
+package json.libJackson.JsonString;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;

@@ -1,4 +1,4 @@
-package json.TR.productCard;
+package json.libJackson.productCard;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,9 +1,6 @@
-package json.TR.studGroup;
+package json.libJackson.studGroup;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,11 +11,11 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
+@JsonIgnoreProperties({"id","password"})//перечисление нежелательных полей
 public class Student {
     private int id;
     @JsonProperty(value = "full_name")
     private String fullName;
-    @JsonIgnore
     private String password;
     @JsonFormat(pattern = "dd.MM.yyyy")
     private LocalDate birthDate;

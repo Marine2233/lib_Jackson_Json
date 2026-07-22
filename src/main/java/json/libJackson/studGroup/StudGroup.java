@@ -1,6 +1,7 @@
-package json.TR.studGroup;
+package json.libJackson.studGroup;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -14,8 +15,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,8 +22,13 @@ import java.util.stream.Collectors;
 public class StudGroup {
     public static void main(String[] args) {
         StudGroup group = new StudGroup("Group",LocalDate.of(2026,5,12),new ArrayList<>());
-        group.getStudents().add(new Student(1,"student 1 ", "password",LocalDate.of(1996,2,1),new ArrayList<>(),"123"));
-        group.getStudents().add(new Student(2,"student 2 ", "password2",LocalDate.of(1996,8,8),List.of("Java","SF"),"123"));
+        group.getStudents().
+                add(new Student(1,"student 1 ", "password",
+                        LocalDate.of(1996,2,1),new ArrayList<>(),"123"));
+
+        group.getStudents().
+                add(new Student(2,"student 2 ", "password2",
+                LocalDate.of(1996,8,8),List.of("Java","SF"),"123"));
 
         ObjectMapper mapper = new ObjectMapper();
         mapper.registerModule(new JavaTimeModule());
@@ -43,7 +47,8 @@ public class StudGroup {
             System.out.println(res.getGroupName());
             Student maxAge = res.students.stream().min(Comparator.comparing(Student::getBirthDate)).orElse(null);
             System.out.println("Max age "+maxAge);
-            List<Student> javaCourse = group.students.stream().filter(student -> student.getCourses().contains("Java")).collect(Collectors.toList());
+            List<Student> javaCourse =
+                    group.students.stream().filter(student -> student.getCourses().contains("Java".toLowerCase())).toList();
             System.out.println("Course Java "+javaCourse);
         } catch (IOException e) {
             throw new RuntimeException(e);
